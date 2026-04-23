@@ -1,0 +1,44 @@
+cbuffer cbPerObject : register(b0)
+{
+	float4x4 gWorld;
+    float4 gColor;
+    float4 gLight;
+    float gTime;
+};
+
+cbuffer cbPerFrame : register(b1)
+{
+    float4x4 gView;
+    float4x4 gProj;
+};
+
+struct VertexIn
+{
+	float3 PosL  : POSITION;
+};
+
+struct VertexOut
+{
+	float4 PosH  : SV_POSITION;
+};
+
+VertexOut VS(VertexIn vin)
+{
+	VertexOut vout;
+
+    float4x4 gWorldViewProj = mul(mul(gWorld, gView), gProj);
+	vout.PosH = mul(float4(vin.PosL, 1.0f), gWorldViewProj);
+
+    return vout;
+}
+
+float4 PS(VertexOut pin) : SV_Target
+{
+    float r = abs(sin(gTime));
+    float g = abs(sin(gTime) + 15.0);
+    float b = abs(sin(gTime) + 28.0);
+
+    return float4(r, g, b, 1.0);
+}
+
+

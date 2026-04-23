@@ -1,0 +1,124 @@
+{
+    "projects": {
+        "0B21542A-4518-2BA3-33AE-71765B96033A": {
+            "config-debug": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "4E801BF4-01C2-5C49-0595-08FA431D4135",
+                "4E9A6BD7-3003-4C43-47EA-03AF246065BB",
+                "4ED80993-5DDE-4636-4573-271F0B610C78"
+            ],
+            "dependents": [],
+            "name": "Gameplay",
+            "property-lib": false,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": true
+        },
+        "4E801BF4-01C2-5C49-0595-08FA431D4135": {
+            "config-debug": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "0B21542A-4518-2BA3-33AE-71765B96033A"
+            ],
+            "name": "Render",
+            "property-lib": true,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "4E9A6BD7-3003-4C43-47EA-03AF246065BB": {
+            "config-debug": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "0B21542A-4518-2BA3-33AE-71765B96033A"
+            ],
+            "name": "Engine",
+            "property-lib": true,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "4ED80993-5DDE-4636-4573-271F0B610C78": {
+            "config-debug": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../../ProjetMoteur/libs/J-SON/include"
+              ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "0B21542A-4518-2BA3-33AE-71765B96033A"
+            ],
+            "name": "Core",
+            "property-lib": true,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        }
+    },
+    "projects_name_to_guid": {
+        "Core": "4ED80993-5DDE-4636-4573-271F0B610C78",
+        "Engine": "4E9A6BD7-3003-4C43-47EA-03AF246065BB",
+        "Gameplay": "0B21542A-4518-2BA3-33AE-71765B96033A",
+        "Render": "4E801BF4-01C2-5C49-0595-08FA431D4135"
+    },
+    "solution_guid": "4E3E543C-0E1E-0456-5FC2-56334FF425E6",
+    "solution_name": "ProjetMoteur",
+    "startup_project": "",
+    "version": "2.0"
+}
